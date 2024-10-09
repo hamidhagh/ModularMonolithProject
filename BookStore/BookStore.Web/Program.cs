@@ -1,5 +1,6 @@
 using System.Reflection;
 using BookStore.Books;
+using BookStore.EmailSending;
 using BookStore.SharedKernel;
 using BookStore.Users;
 using FastEndpoints;
@@ -27,7 +28,7 @@ builder.Services.AddFastEndpoints()
 // Add Module Services
 List<Assembly> mediatRAssemblies = [typeof(Program).Assembly];
 builder.Services.AddBookModuleServices(builder.Configuration, logger, mediatRAssemblies);
-//builder.Services.AddEmailSendingModuleServices(builder.Configuration, logger, mediatRAssemblies);
+builder.Services.AddEmailSendingModuleServices(builder.Configuration, logger, mediatRAssemblies);
 //builder.Services.AddReportingModuleServices(builder.Configuration, logger, mediatRAssemblies);
 builder.Services.AddOrderModuleServices(builder.Configuration, logger, mediatRAssemblies);
 builder.Services.AddUserModuleServices(builder.Configuration, logger, mediatRAssemblies);

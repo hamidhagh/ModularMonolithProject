@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Books Module\BookStore.Books.Contracts\BookStore.Books.Contracts.csproj" />
     <ProjectReference Include="..\..\BookStore.SharedKernel\BookStore.SharedKernel.csproj" />
+    <ProjectReference Include="..\..\EmailSending Module\BookStore.EmailSending.Contracts\BookStore.EmailSending.Contracts.csproj" />
     <ProjectReference Include="..\..\Orders Module\BookStore.Orders.Contracts\BookStore.Orders.Contracts.csproj" />
     <ProjectReference Include="..\BookStore.Users.Contracts\BookStore.Users.Contracts.csproj" />
   </ItemGroup>

@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\EmailSending Module\BookStore.EmailSending.Contracts\BookStore.EmailSending.Contracts.csproj" />
     <ProjectReference Include="..\..\Users Module\BookStore.Users.Contracts\BookStore.Users.Contracts.csproj" />
     <ProjectReference Include="..\BookStore.Orders.Contracts\BookStore.Orders.Contracts.csproj" />
   </ItemGroup>

@@ -6,7 +6,7 @@ using BookStore.Orders;
 using Xunit.Abstractions;
 using static ArchUnitNET.Fluent.ArchRuleDefinition;
 
-namespace RiverBooks.OrderProcessing.Tests;
+namespace BookStore.Orders.Tests;
 
 public class InfrastructureDependencyTests
 {

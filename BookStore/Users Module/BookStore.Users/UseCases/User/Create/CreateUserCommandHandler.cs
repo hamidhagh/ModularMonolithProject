@@ -1,4 +1,5 @@
 ﻿using Ardalis.Result;
+using BookStore.EmailSending.Contracts;
 using BookStore.Users.Domain;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -38,7 +39,7 @@ internal class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Res
     {
       To = command.Email,
       From = "donotreply@test.com",
-      Subject = "Welcome to RiverBooks!",
+      Subject = "Welcome to BookStore!",
       Body = "Thank you for registering."
     };
 

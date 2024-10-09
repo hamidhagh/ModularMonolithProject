@@ -1,4 +1,5 @@
-﻿using BookStore.Users.Contracts;
+﻿using BookStore.EmailSending.Contracts;
+using BookStore.Users.Contracts;
 using MediatR;
 
 namespace BookStore.Orders.Domain;
@@ -27,14 +28,14 @@ internal class SendConfirmationEmailOrderCreatedEventHandler :
     }
     string userEmail = result.Value.EmailAddress;
 
-    //var command = new SendEmailCommand()
-    //{
-    //  To = userEmail,
-    //  From = "noreply@test.com",
-    //  Subject = "Your RiverBooks Purchase",
-    //  Body = $"You bought {notification.Order.OrderItems.Count} items."
-    //};
-    //Guid emailId = await _mediator.Send(command);
+    var command = new SendEmailCommand()
+    {
+      To = userEmail,
+      From = "noreply@test.com",
+      Subject = "Your BookStore Purchase",
+      Body = $"You bought {notification.Order.OrderItems.Count} items."
+    };
+    Guid emailId = await _mediator.Send(command);
 
     // TODO: Do something with emailId
 
