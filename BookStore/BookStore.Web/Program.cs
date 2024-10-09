@@ -1,6 +1,7 @@
 using System.Reflection;
 using BookStore.Books;
 using BookStore.SharedKernel;
+using BookStore.Users;
 using FastEndpoints;
 using FastEndpoints.Security;
 using FastEndpoints.Swagger;
@@ -28,8 +29,8 @@ List<Assembly> mediatRAssemblies = [typeof(Program).Assembly];
 builder.Services.AddBookModuleServices(builder.Configuration, logger, mediatRAssemblies);
 //builder.Services.AddEmailSendingModuleServices(builder.Configuration, logger, mediatRAssemblies);
 //builder.Services.AddReportingModuleServices(builder.Configuration, logger, mediatRAssemblies);
-//builder.Services.AddOrderProcessingModuleServices(builder.Configuration, logger, mediatRAssemblies);
-//builder.Services.AddUserModuleServices(builder.Configuration, logger, mediatRAssemblies);
+builder.Services.AddOrderModuleServices(builder.Configuration, logger, mediatRAssemblies);
+builder.Services.AddUserModuleServices(builder.Configuration, logger, mediatRAssemblies);
 
 // Set up MediatR
 builder.Services.AddMediatR(cfg =>

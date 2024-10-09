@@ -5,16 +5,37 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books Module", "Books Module", "{A5B99481-7B92-470A-AA17-7740D33CB895}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Books", "Books Module\BookStore.Books\BookStore.Books.csproj", "{4E0E91CA-8A74-4703-8470-D0458FB1AF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Books", "Books Module\BookStore.Books\BookStore.Books.csproj", "{4E0E91CA-8A74-4703-8470-D0458FB1AF54}"
 	ProjectSection(ProjectDependencies) = postProject
 		{75A23BDF-DA52-40B9-8953-9510DD8A8902} = {75A23BDF-DA52-40B9-8953-9510DD8A8902}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Books.Contracts", "Books Module\BookStore.Books.Contracts\BookStore.Books.Contracts.csproj", "{75A23BDF-DA52-40B9-8953-9510DD8A8902}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Books.Contracts", "Books Module\BookStore.Books.Contracts\BookStore.Books.Contracts.csproj", "{75A23BDF-DA52-40B9-8953-9510DD8A8902}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Web", "BookStore.Web\BookStore.Web.csproj", "{483BB12D-ABE0-4E7A-8C9D-F067F49CD556}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Web", "BookStore.Web\BookStore.Web.csproj", "{483BB12D-ABE0-4E7A-8C9D-F067F49CD556}"
+	ProjectSection(ProjectDependencies) = postProject
+		{106E1523-3E70-478A-9F1B-4CE0107528A2} = {106E1523-3E70-478A-9F1B-4CE0107528A2}
+		{606FCA5A-755E-47EF-BF3C-268861B6D4AF} = {606FCA5A-755E-47EF-BF3C-268861B6D4AF}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.SharedKernel", "BookStore.SharedKernel\BookStore.SharedKernel.csproj", "{07AEB83E-16D5-4918-9E0E-D16CAF3F6D10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.SharedKernel", "BookStore.SharedKernel\BookStore.SharedKernel.csproj", "{07AEB83E-16D5-4918-9E0E-D16CAF3F6D10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users Module", "Users Module", "{1336225E-DC36-43B0-9C65-0255E7EA172A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Users", "Users Module\BookStore.Users\BookStore.Users.csproj", "{106E1523-3E70-478A-9F1B-4CE0107528A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Users.Contracts", "Users Module\BookStore.Users.Contracts\BookStore.Users.Contracts.csproj", "{B7E7F80D-115C-43FE-A3A5-0EC5F2BA9D83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders Module", "Orders Module", "{07897387-ED0F-4206-9BDC-99E9B9755244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Orders", "Orders Module\BookStore.Orders\BookStore.Orders.csproj", "{606FCA5A-755E-47EF-BF3C-268861B6D4AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Orders.Contracts", "Orders Module\BookStore.Orders.Contracts\BookStore.Orders.Contracts.csproj", "{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Orders.Tests", "Orders Module\BookStore.Orders.Tests\BookStore.Orders.Tests.csproj", "{3D5171E2-F282-42A4-9ABA-967D58146F11}"
+	ProjectSection(ProjectDependencies) = postProject
+		{606FCA5A-755E-47EF-BF3C-268861B6D4AF} = {606FCA5A-755E-47EF-BF3C-268861B6D4AF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +59,26 @@ Global
 		{07AEB83E-16D5-4918-9E0E-D16CAF3F6D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07AEB83E-16D5-4918-9E0E-D16CAF3F6D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07AEB83E-16D5-4918-9E0E-D16CAF3F6D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106E1523-3E70-478A-9F1B-4CE0107528A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106E1523-3E70-478A-9F1B-4CE0107528A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106E1523-3E70-478A-9F1B-4CE0107528A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106E1523-3E70-478A-9F1B-4CE0107528A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E7F80D-115C-43FE-A3A5-0EC5F2BA9D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E7F80D-115C-43FE-A3A5-0EC5F2BA9D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E7F80D-115C-43FE-A3A5-0EC5F2BA9D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E7F80D-115C-43FE-A3A5-0EC5F2BA9D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606FCA5A-755E-47EF-BF3C-268861B6D4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606FCA5A-755E-47EF-BF3C-268861B6D4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606FCA5A-755E-47EF-BF3C-268861B6D4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606FCA5A-755E-47EF-BF3C-268861B6D4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5171E2-F282-42A4-9ABA-967D58146F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5171E2-F282-42A4-9ABA-967D58146F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5171E2-F282-42A4-9ABA-967D58146F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5171E2-F282-42A4-9ABA-967D58146F11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +86,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4E0E91CA-8A74-4703-8470-D0458FB1AF54} = {A5B99481-7B92-470A-AA17-7740D33CB895}
 		{75A23BDF-DA52-40B9-8953-9510DD8A8902} = {A5B99481-7B92-470A-AA17-7740D33CB895}
+		{106E1523-3E70-478A-9F1B-4CE0107528A2} = {1336225E-DC36-43B0-9C65-0255E7EA172A}
+		{B7E7F80D-115C-43FE-A3A5-0EC5F2BA9D83} = {1336225E-DC36-43B0-9C65-0255E7EA172A}
+		{606FCA5A-755E-47EF-BF3C-268861B6D4AF} = {07897387-ED0F-4206-9BDC-99E9B9755244}
+		{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7} = {07897387-ED0F-4206-9BDC-99E9B9755244}
+		{3D5171E2-F282-42A4-9ABA-967D58146F11} = {07897387-ED0F-4206-9BDC-99E9B9755244}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30444753-3F7E-4759-B6A3-B38A344D9AEF}
