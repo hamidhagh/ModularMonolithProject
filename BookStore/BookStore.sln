@@ -28,20 +28,24 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Users.Contracts",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders Module", "Orders Module", "{07897387-ED0F-4206-9BDC-99E9B9755244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Orders", "Orders Module\BookStore.Orders\BookStore.Orders.csproj", "{606FCA5A-755E-47EF-BF3C-268861B6D4AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Orders", "Orders Module\BookStore.Orders\BookStore.Orders.csproj", "{606FCA5A-755E-47EF-BF3C-268861B6D4AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Orders.Contracts", "Orders Module\BookStore.Orders.Contracts\BookStore.Orders.Contracts.csproj", "{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Orders.Contracts", "Orders Module\BookStore.Orders.Contracts\BookStore.Orders.Contracts.csproj", "{54C7BDB2-6FF4-47ED-B420-C3A7DB5DA4C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Orders.Tests", "Orders Module\BookStore.Orders.Tests\BookStore.Orders.Tests.csproj", "{3D5171E2-F282-42A4-9ABA-967D58146F11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Orders.Tests", "Orders Module\BookStore.Orders.Tests\BookStore.Orders.Tests.csproj", "{3D5171E2-F282-42A4-9ABA-967D58146F11}"
 	ProjectSection(ProjectDependencies) = postProject
 		{606FCA5A-755E-47EF-BF3C-268861B6D4AF} = {606FCA5A-755E-47EF-BF3C-268861B6D4AF}
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailSending Module", "EmailSending Module", "{9043D452-A967-4E82-B27F-105B08DD17C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.EmailSending", "EmailSending Module\BookStore.EmailSending\BookStore.EmailSending.csproj", "{42274A39-7CD9-4C62-80F2-146EC6FFEFC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.EmailSending", "EmailSending Module\BookStore.EmailSending\BookStore.EmailSending.csproj", "{42274A39-7CD9-4C62-80F2-146EC6FFEFC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.EmailSending.Contracts", "EmailSending Module\BookStore.EmailSending.Contracts\BookStore.EmailSending.Contracts.csproj", "{7C1F08C6-30B4-4B0D-BA37-41EF815977CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.EmailSending.Contracts", "EmailSending Module\BookStore.EmailSending.Contracts\BookStore.EmailSending.Contracts.csproj", "{7C1F08C6-30B4-4B0D-BA37-41EF815977CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reporting Module", "Reporting Module", "{25E6A32A-4488-463E-B722-534E8E34FB8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Reporting", "Reporting Module\BookStore.Reporting\BookStore.Reporting.csproj", "{CD7B427D-328C-4657-BB7A-EE851E5BDA25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,10 @@ Global
 		{7C1F08C6-30B4-4B0D-BA37-41EF815977CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C1F08C6-30B4-4B0D-BA37-41EF815977CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C1F08C6-30B4-4B0D-BA37-41EF815977CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7B427D-328C-4657-BB7A-EE851E5BDA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7B427D-328C-4657-BB7A-EE851E5BDA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7B427D-328C-4657-BB7A-EE851E5BDA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7B427D-328C-4657-BB7A-EE851E5BDA25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +115,7 @@ Global
 		{3D5171E2-F282-42A4-9ABA-967D58146F11} = {07897387-ED0F-4206-9BDC-99E9B9755244}
 		{42274A39-7CD9-4C62-80F2-146EC6FFEFC0} = {9043D452-A967-4E82-B27F-105B08DD17C4}
 		{7C1F08C6-30B4-4B0D-BA37-41EF815977CD} = {9043D452-A967-4E82-B27F-105B08DD17C4}
+		{CD7B427D-328C-4657-BB7A-EE851E5BDA25} = {25E6A32A-4488-463E-B722-534E8E34FB8E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30444753-3F7E-4759-B6A3-B38A344D9AEF}
